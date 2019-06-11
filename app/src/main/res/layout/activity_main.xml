@@ -1,0 +1,2761 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECF8E0"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box"
+                    android:text="1.Patient/consumer identification(please complete or tick boxes below as appropriate)"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box">
+
+
+                <TextView
+                    android:id="@+id/NameP"
+                    android:layout_width="143dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="Name:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="1dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="textStart" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="@drawable/box">
+
+
+                <TextView
+                    android:id="@+id/PRN"
+                    android:layout_width="140dp"
+                    android:layout_height="39dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Patient Record Number(PRN):"
+                    android:textAlignment="center" />
+
+                <EditText
+
+                    android:id="@+id/etPRN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="3dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="viewStart" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box">
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="13dp"
+                    android:text="Place of Birth:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etPOB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="viewStart" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box">
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="141dp"
+                    android:layout_height="21dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginBottom="17dp"
+                    android:text="IPD/OPD:   "
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etIPD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="viewStart" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/box">
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="141dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="26dp"
+                    android:text="Age: "
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="6dp"
+
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/box">
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginEnd="262dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Sex:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgSex"
+                    android:layout_width="217dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp">
+
+                    <RadioButton
+                        android:id="@+id/rbMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="116dp"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/rbFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="17dp"
+                        android:text="Female" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="143dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Address:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="4dp"
+
+                    android:ems="10"
+                    android:inputType="textMultiLine|textPersonName"
+                    android:textAlignment="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box">
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="138dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Village/Town:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etVillage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="4dp"
+
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box">
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="137dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Post/Via:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etPost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="4dp"
+
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box">
+
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="139dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="District/State:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etDistrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="4dp"
+
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box">
+
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="139dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Diagnosis:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etDiagnosis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/box">
+
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="5dp"
+                    android:text="Constitution and Temperament:"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etConstitution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECF8E0"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="412dp"
+                        android:layout_height="63dp"
+                        android:text="2.Description of the Suspected Adverse Reaction"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/textView14"
+
+                        tools:ignore="MissingConstraints,NotSibling"
+                        tools:layout_editor_absoluteX="0dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:id="@+id/textView14"
+
+                        android:layout_width="402dp"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="8dp"
+
+                        android:text="Date and Time of Initial Observation:"
+
+                        android:textSize="18sp"
+
+                        android:textStyle="bold"
+
+                        app:layout_constraintBottom_toTopOf="@+id/etDate"
+
+                        tools:ignore="MissingConstraints,NotSibling"
+
+                        tools:layout_editor_absoluteX="0dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/box"
+                        android:text="Date"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView16"
+                        tools:ignore="MissingConstraints,NotSibling"
+                        tools:layout_editor_absoluteX="3dp" />
+
+                    <EditText
+                        android:id="@+id/etDate"
+                        android:layout_width="113dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="111dp"
+                        android:layout_marginLeft="111dp"
+                        android:layout_marginTop="0dp"
+                        android:ems="10"
+                        android:inputType="date"
+                        app:layout_constraintBottom_toTopOf="@+id/etTime"
+                        tools:ignore="MissingConstraints,NotSibling"
+                        tools:layout_editor_absoluteX="74dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/box"
+                        android:text="Time:"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView16"
+                        tools:ignore="MissingConstraints,NotSibling"
+                        tools:layout_editor_absoluteX="3dp" />
+
+
+                    <EditText
+
+                        android:id="@+id/etTime"
+
+                        android:layout_width="114dp"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentStart="true"
+
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentTop="true"
+
+                        android:layout_marginStart="111dp"
+
+                        android:layout_marginLeft="111dp"
+                        android:layout_marginTop="0dp"
+                        android:ems="10"
+                        android:inputType="time"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="82dp"
+                        tools:layout_editor_absoluteY="160dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:id="@+id/textView18"
+
+                        android:layout_width="403dp"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentStart="true"
+
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_centerVertical="true"
+
+                        android:text="Description of Rection: "
+
+                        android:textSize="18sp"
+
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toBottomOf="@+id/textView17"
+                        tools:ignore="MissingConstraints,NotSibling"
+                        tools:layout_editor_absoluteX="0dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+
+                        android:id="@+id/etDescription"
+
+                        android:layout_width="397dp"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+
+                        android:ems="10"
+
+                        android:inputType="textMultiLine"
+
+                        app:layout_constraintTop_toBottomOf="@+id/textView18"
+
+                        tools:ignore="MissingConstraints,NotSibling"
+
+                        tools:layout_editor_absoluteX="0dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="3.Whether the person is Suffering from any Chronic Disorder?"
+                        android:textAllCaps="false"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toBottomOf="@+id/etDescription"
+                        tools:ignore="MissingConstraints,NotSibling,UnknownId"
+                        tools:layout_editor_absoluteX="2dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="208dp"
+                        android:layout_height="31dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:text="(If yes,please specify)"
+                        android:textSize="18sp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView19"
+                        tools:ignore="MissingConstraints,NotSibling"
+                        tools:layout_editor_absoluteX="0dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cbHepatic"
+                        android:layout_width="104dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Hepatic"
+                        android:textSize="18sp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView20"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="2dp" />
+
+                    <CheckBox
+
+                        android:id="@+id/cbRental"
+
+                        android:layout_width="106dp"
+
+                        android:layout_height="34dp"
+
+                        android:text="Rental"
+
+                        android:textSize="18sp"
+
+                        app:layout_constraintTop_toBottomOf="@+id/cbHepatic"
+
+                        tools:ignore="MissingConstraints"
+
+                        tools:layout_editor_absoluteX="0dp" />
+
+
+                    <CheckBox
+
+                        android:id="@+id/cbCardiac"
+
+                        android:layout_width="106dp"
+
+                        android:layout_height="wrap_content"
+
+                        android:text="Cardiac"
+
+                        android:textSize="18sp"
+
+                        app:layout_constraintTop_toBottomOf="@+id/cbRental"
+
+                        tools:ignore="MissingConstraints"
+
+                        tools:layout_editor_absoluteX="0dp" />
+
+
+                    <CheckBox
+
+                        android:id="@+id/cbDiabetic"
+
+                        android:layout_width="105dp"
+
+                        android:layout_height="wrap_content"
+
+                        android:text="Diabetec"
+
+                        android:textSize="18sp"
+
+                        app:layout_constraintTop_toBottomOf="@+id/cbCardiac"
+
+                        tools:ignore="MissingConstraints"
+
+                        tools:layout_editor_absoluteX="2dp" />
+
+
+                    <CheckBox
+
+                        android:id="@+id/cbAnyOther"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="30dp"
+
+                        android:text="Any Others"
+
+                        android:textSize="18sp"
+
+                        app:layout_constraintTop_toBottomOf="@+id/cbDiabetic"
+
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="0dp" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+
+                        android:id="@+id/etSpecify"
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="12dp"
+
+                        android:ems="10"
+
+                        android:inputType="textMultiLine"
+
+                        app:layout_constraintTop_toBottomOf="@+id/cbAnyOther"
+
+                        tools:ignore="MissingConstraints,NotSibling" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ECF8E0"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/textView15"
+                    android:layout_width="412dp"
+                    android:layout_height="70dp"
+                    android:text="4.Addictions if any?If yes,please specify."
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp"
+                    tools:layout_editor_absoluteY="4dp" />
+
+
+                <EditText
+
+                    android:id="@+id/etAddictions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="40dp"
+                    android:text="5.H/O previous allergies/Drug Reactions,if any.If yes,please specify. "
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp"
+                    tools:layout_editor_absoluteY="231dp" />
+
+
+                <EditText
+
+                    android:id="@+id/etPreviousAllergies"
+                    android:layout_width="411dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView21"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginBottom="100dp"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp"
+                    tools:layout_editor_absoluteY="351dp" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/parent_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="6.List of all ASU and H drugs used by the patient during the period of one month:"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="71dp"
+                        android:background="@drawable/box">
+
+                        <TextView
+                            android:id="@+id/NameOFDRUG"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginBottom="23dp"
+                            android:text="Name od Drug:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etNameOfDrug"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="18dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/box">
+
+                        <TextView
+                            android:id="@+id/Namep2"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Manufacturer/Batch no:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etBatchNumber"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="1dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:background="@drawable/box">
+
+
+                        <TextView
+                            android:id="@+id/Expiry"
+                            android:layout_width="172dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="6dp"
+                            android:text="Dose:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etDose"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="1dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="73dp"
+                        android:background="@drawable/box">
+
+
+                        <TextView
+                            android:id="@+id/Name5"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="11dp"
+                            android:text="Form/Route of Administration:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etRouteOfAdministration"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="12dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="67dp"
+                        android:background="@drawable/box">
+
+                        <TextView
+                            android:id="@+id/NameP7"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="11dp"
+                            android:text="Date of Starting:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etDateOfStarting"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="1dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="77dp"
+                        android:background="@drawable/box">
+
+                        <TextView
+                            android:id="@+id/NamePa"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="11dp"
+                            android:text="Date of Stopping:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etDateOfStopping"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="1dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="78dp"
+                        android:background="@drawable/box">
+
+                        <TextView
+                            android:id="@+id/Nawhe"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="Reason for use:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etReasonForUse"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="1dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="76dp"
+                        android:background="@drawable/box">
+
+                        <TextView
+                            android:id="@+id/Nameany1"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="11dp"
+                            android:text="Any other relevant information associated with drug use:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etAnyUnwantedOccurrences"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="1dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/parent_linear_layou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="7. List of other drugs used by the patient during the period of one month:"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="71dp"
+                        android:background="@drawable/box">
+
+                        <TextView
+                            android:id="@+id/NameOFDRUG7"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginBottom="23dp"
+                            android:text="Name of Drug:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etNameOfDrug1"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="18dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/box">
+
+                        <TextView
+                            android:id="@+id/Namep27"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Manufacturer/Batch no:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etBatchNumber1"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="1dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:background="@drawable/box">
+
+
+                        <TextView
+                            android:id="@+id/Expiry7"
+                            android:layout_width="172dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginBottom="6dp"
+                            android:text="Dose:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etDose1"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="1dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="73dp"
+                        android:background="@drawable/box">
+
+
+                        <TextView
+                            android:id="@+id/Name57"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="11dp"
+                            android:text="Form/Route of Administration:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etRouteOfAdministration1"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="12dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="67dp"
+                        android:background="@drawable/box">
+
+                        <TextView
+                            android:id="@+id/NameP77"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="11dp"
+                            android:text="Date of Starting:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etDateOfStarting1"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="1dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="77dp"
+                        android:background="@drawable/box">
+
+                        <TextView
+                            android:id="@+id/NameP17"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="11dp"
+                            android:text="Date of Stopping:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etDateOfStopping1"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="1dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="78dp"
+                        android:background="@drawable/box">
+
+                        <TextView
+                            android:id="@+id/Nawhe7"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="Reason for use:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etReasonForUse1"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="1dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="76dp"
+                        android:background="@drawable/box">
+
+                        <TextView
+                            android:id="@+id/Nameany17"
+                            android:layout_width="172dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="11dp"
+                            android:text="Any other relevant information associated with drug use:"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/etAnyUnwantedOccurrences1"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="1dp"
+                            android:ems="10"
+                            android:gravity="start"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECF8E0"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp"
+                        android:text="8.Details of Drugs Suspect to cause ADR:"
+                        android:textAlignment="viewStart"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TableLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#000000">
+
+                            <TableRow
+                                android:layout_height="70dp"
+                                android:layout_margin="1dp"
+                                android:background="#FFFFFF">
+
+
+                                <TextView
+                                    android:id="@+id/textView28"
+                                    android:layout_width="196dp"
+                                    android:layout_height="65dp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Name of the Drug:"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/etNameOfSuspectedDrug"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginEnd="2dp"
+                                    android:ems="10"
+                                    android:inputType="textPersonName" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_margin="1dp"
+                                android:background="#FFFFFF">
+
+
+                                <TextView
+                                    android:id="@+id/textView38"
+                                    android:layout_width="215dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginTop="17dp"
+                                    android:text="Manufacturing Date:"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/etMfgDate"
+                                    android:layout_width="139dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="64dp"
+                                    android:ems="10"
+                                    android:inputType="date" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_margin="1dp"
+                                android:background="#FFFFFF">
+
+                                <TextView
+                                    android:id="@+id/textView48"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginTop="17dp"
+                                    android:text="Expiry Date:"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/etExpDate"
+                                    android:layout_width="139dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="64dp"
+                                    android:ems="10"
+                                    android:inputType="date" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_margin="1dp"
+                                android:background="#FFFFFF">
+
+                                <TextView
+                                    android:id="@+id/textView280"
+                                    android:layout_width="142dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginStart="0dp"
+                                    android:text="Remaining pack/Label(if available):"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/etRemainingPack"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:ems="10"
+                                    android:inputType="textPersonName" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_margin="1dp"
+                                android:background="#FFFFFF">
+
+                                <TextView
+                                    android:id="@+id/textView58"
+                                    android:layout_width="142dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginStart="0dp"
+                                    android:text="Consumed Orally along with()water/milk/honey/or any other:"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/etConsumedOrally"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="49dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:ems="10"
+                                    android:inputType="textPersonName" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_margin="1dp"
+                                android:background="#FFFFFF">
+
+                                <TextView
+                                    android:id="@+id/textView68"
+                                    android:layout_width="142dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginStart="0dp"
+                                    android:text="whether any dietary precautions have been prescribed?:   (if yes,please specify):"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/etDietaryPrecautions"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="84dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:ems="10"
+                                    android:inputType="textPersonName" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_margin="1dp"
+                                android:background="#FFFFFF">
+
+                                <TextView
+                                    android:id="@+id/textView78"
+                                    android:layout_width="142dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:text="whether the drug is consumed under medical supervision or used as self medication:"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/etUnderSupervision"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="74dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:ems="10"
+                                    android:inputType="textPersonName" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_margin="1dp"
+                                android:background="#FFFFFF">
+
+                                <TextView
+                                    android:id="@+id/textView88"
+                                    android:layout_width="142dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:text="Any other relevant information associated with drug use:"
+                                    android:textAlignment="center"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/etRelaventInformation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="63dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:ems="10"
+                                    android:inputType="textPersonName" />
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="152dp">
+
+
+                    <TextView
+                        android:id="@+id/textView299"
+                        android:layout_width="match_parent"
+                        android:layout_height="73dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp"
+                        android:text="9.Management provided / taken for suspected adverse reaction "
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etMgmtProvided"
+                        android:layout_width="401dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="17dp"
+                        android:ems="10"
+                        android:inputType="textMultiLine" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="648dp">
+
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:text="10.Please indicate outcome of the suspected adverse reaction(Tick Appropriate)"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rgOutCome"
+                        android:layout_width="315dp"
+                        android:layout_height="120dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="94dp"
+                        android:layout_marginBottom="433dp"
+                        android:orientation="vertical">
+
+
+                        <RadioButton
+                            android:id="@+id/rbRecovered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Recovered" />
+
+                        <RadioButton
+                            android:id="@+id/rbNotRecovered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Not Recovered" />
+
+                        <RadioButton
+                            android:id="@+id/rbUnknown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unknown" />
+
+                        <RadioButton
+                            android:id="@+id/rbFatal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fatal" />
+                    </RadioGroup>
+
+
+                    <TextView
+                        android:id="@+id/checkBox10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="393dp"
+                        android:text="If Fatal,Date of Birth" />
+
+                    <EditText
+                        android:id="@+id/etDobFatal"
+                        android:layout_width="174dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="59dp"
+                        android:layout_marginBottom="383dp"
+                        android:ems="10"
+                        android:inputType="date" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="84dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginBottom="343dp"
+                        android:text="Severe:"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rgSevere"
+                        android:layout_width="188dp"
+                        android:layout_height="44dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="114dp"
+                        android:layout_marginTop="273dp"
+                        android:layout_marginBottom="331dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbYes"
+                            android:layout_width="71dp"
+                            android:layout_height="match_parent"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbNo"
+                            android:layout_width="67dp"
+                            android:layout_height="44dp"
+                            android:text="No" />
+
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="282dp"
+                        android:text="Reaction abated after drug stopped or dose reduced:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etReactionAbated"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="237dp"
+                        android:ems="10"
+                        android:inputType="textMultiLine" />
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="195dp"
+                        android:text="Reaction reappeared after re administration of drug:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etReactionReappeared"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="143dp"
+                        android:ems="10"
+                        android:inputType="textMultiLine" />
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="168dp"
+                        android:layout_height="111dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="26dp"
+                        android:text="Was the patient admitted to hospital? If yes, give name and address of hospital"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etAdmittedHospital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="22dp"
+                        android:layout_marginBottom="30dp"
+                        android:ems="10"
+                        android:inputType="textMultiLine" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECF8E0"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="187dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textView139"
+                        android:layout_width="match_parent"
+                        android:layout_height="121dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="0dp"
+
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="66dp"
+                        android:text="11. Any abnormal findings of relevant laboratory investigations related to the episode done pre and post episode of ADR:"
+                        android:textAlignment="viewStart"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/textView14"
+                        tools:ignore="MissingConstraints,NotSibling"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                    <EditText
+                        android:id="@+id/etAbnormalFindings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="15dp"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp">
+
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="363dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="48dp"
+                        android:layout_marginBottom="17dp"
+                        android:text="12. Particulars of ADR Reporter: "
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="145dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="266dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Please Choose" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="421dp"
+                    android:layout_height="400dp">
+
+                    <TextView
+                        android:id="@+id/editText279"
+                        android:layout_width="78dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="343dp"
+                        android:layout_marginBottom="345dp"
+                        android:ems="10"
+                        android:text="Name:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etReporterName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="68dp"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginBottom="292dp"
+                        android:text="Address:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etReporterAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="69dp"
+                        android:layout_marginBottom="284dp"
+                        android:ems="10"
+                        android:inputType="textMultiLine" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginBottom="71dp"
+                        android:text="Telephone:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etReporterTelephone"
+                        android:layout_width="214dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="141dp"
+                        android:layout_marginEnd="66dp"
+                        android:layout_marginBottom="54dp"
+                        android:ems="10"
+                        android:inputType="phone" />
+
+                    <TextView
+                        android:id="@+id/textView389"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginBottom="19dp"
+                        android:text="E-mail:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etReporterEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="69dp"
+                        android:layout_marginBottom="17dp"
+                        android:ems="10"
+                        android:inputType="textEmailAddress" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="112dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="309dp"
+                        android:layout_marginBottom="219dp"
+                        android:text="Village/Town:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etReporterVillage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="68dp"
+                        android:layout_marginBottom="218dp"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="333dp"
+                        android:layout_marginBottom="170dp"
+                        android:text="Post/Via:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etReporterPost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="68dp"
+                        android:layout_marginBottom="163dp"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="330dp"
+                        android:layout_marginBottom="116dp"
+                        android:text="State:"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etReporterState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="69dp"
+                        android:layout_marginBottom="108dp"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECF8E0"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="57dp"
+                        android:layout_marginEnd="77dp"
+                        android:gravity="center"
+                        android:text="The ADR Portability Scale"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+
+                    <TextView
+                        android:id="@+id/Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="37dp"
+                        android:text="(Program Coordinator has to fill this scale)"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/NameP9"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="36dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="18dp"
+                        android:text="score=certain;  5-8=Probable;  1-4=Possible;  0-unlikely"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="331dp"
+                        android:text="Questions"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="150dp"
+                        android:text="YES"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="115dp"
+                        android:text="NO"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:text="DON'T KNOW"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="228dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="183dp"
+                        android:text="1.Are there previous conclusive reports on the reactions?"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="149dp" />
+
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="24dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="115dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="228dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="183dp"
+                        android:text="2.Did the ADR appear after the suspected drug was administrative?"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="148dp" />
+
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="24dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="114dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="228dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="183dp"
+                        android:text="3.Did the ADR improve when the drug was dicontinued a specific atagonist was administered? "
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="147dp" />
+
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="24dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="114dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="228dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="183dp"
+                        android:text="4.Did the adverse reaction reappear when the drug was re-administered?"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="148dp" />
+
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="24dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="115dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="228dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="183dp"
+                        android:text="5.Are there alternatives causes that could solely have caused the ADR?"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="147dp" />
+
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="24dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="115dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="228dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="183dp"
+                        android:text="6.Was the drug detected in the blood?(or other fluids)in a concentration known to be toxic?"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="146dp" />
+
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="24dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="115dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="228dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="183dp"
+                        android:text="7.Was the reaction more severe when the drug was increased,or less severe when the drug was decreased?  "
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="146dp" />
+
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="24dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="114dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="228dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="183dp"
+                        android:text="8.Did the patient have a similar reaction to the same or similar drug in any previous exposure?"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="146dp" />
+
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="24dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="114dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="228dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="183dp"
+                        android:text="9.Was the adverse event confirmed by the objective evidence? "
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="146dp" />
+
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="24dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="114dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="228dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="183dp"
+                        android:text="TOTAL "
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="146dp" />
+
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="24dp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="114dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="138dp"
+                        android:layout_marginEnd="162dp"
+                        android:gravity="center"
+                        android:text="SUBMIT"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
